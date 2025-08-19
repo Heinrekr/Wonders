@@ -64,6 +64,21 @@
     max-width: 1440px;
     justify-content: space-between;
     align-items: center;
-    padding: 32.5px;
+    padding: 32.5px 64px;
     margin: auto;
+}
+
+/*MAIN HERO*/
+.hero {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 64px 64px
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    height: 704px;
 }
