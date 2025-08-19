@@ -48,7 +48,9 @@
 .header-nav {
     display: flex;
     max-width: 610px;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav a {
@@ -57,6 +59,11 @@
     color: var(--primary-black-train);
 }
 
-.header {
-
+.header-container {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32.5px;
+    margin-inline: 64px;
 }
