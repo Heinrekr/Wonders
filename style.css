@@ -33,7 +33,25 @@
     box-sizing: border-box;
 }
 
+h1 {
+    color: var(--primary-black-train);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+p {
+    color: var(--primary-black-train);
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+
+}
+
 /*HEADER STYLE*/
+.header-container {
+    background-color: var(--primary-blue-train-10);
+}
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -64,21 +82,60 @@
     max-width: 1440px;
     justify-content: space-between;
     align-items: center;
-    padding: 32.5px 64px;
+    padding: 32px 64px;
     margin: auto;
 }
 
 /*MAIN HERO*/
 .hero {
+    background-color: var(--primary-blue-train-10);
+}
+
+.hero-container {
     display: flex;
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
-    padding: 64px 64px
+    padding: 64px 64px 128px;
 }
+
 .hero-image {
     display: flex;
     justify-content: center;
     width: 640px;
     height: 704px;
+}
+
+.hero-frame {
+    width: 640px;
+}
+
+.trip-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 0px 24px;
+    font-size: 14px;
+    height: 34px;
+    margin-bottom: 24px;
+}
+
+.passenger-counter {
+    display: flex;
+}
+
+.hero-button {
+    background-color: var(--primary-blue-train);
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 220px;
+    max-width: 640px;
+    max-height: 62px;
+    border: none;
+    display: flex;
+    align-items: center;
 }
