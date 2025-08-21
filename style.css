@@ -48,7 +48,7 @@ p {
 }
 
 /*HEADER STYLE*/
-.header-container {
+.header {
     background-color: var(--primary-blue-train-10);
 }
 
@@ -124,7 +124,73 @@ p {
 
 .passenger-counter {
     display: flex;
+    align-items: center;
 }
+
+.passenger-number {
+    color: var(--primary-black-train);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 24px;
+    height: 22px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.passenger-button {
+    font-size: 20px;
+    background-color: var(--white);
+    border: none;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.departure-arrival {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 89px 89px;
+    margin-bottom: 24px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.departure-input {
+    border-radius: 10px;
+    border: none;
+    height: 53px;
+    width: 304px;
+    margin-top: 16px;
+}
+
+.arrival-input {
+    border-radius: 10px;
+    border: none;
+    height: 53px;
+    width: 304px;
+    margin-top: 16px;
+}
+
+.depart-input {
+    border-radius: 10px;
+    border: none;
+    height: 53px;
+    width: 304px;
+    margin-top: 16px;
+}
+
+.return-input {
+    border-radius: 10px;
+    border: none;
+    height: 53px;
+    width: 304px;
+    margin-top: 16px;
+}
+
 
 .hero-button {
     background-color: var(--primary-blue-train);

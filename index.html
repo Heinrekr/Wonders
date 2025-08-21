@@ -36,14 +36,30 @@
                                 <circle cx="9" cy="7" r="4" fill="#0578FF"/>
                                 <path d="M3 20C1.89543 20 0.974346 19.0907 1.24685 18.0202C2.12788 14.5595 5.26504 12 9 12C12.735 12 15.8721 14.5595 16.7531 18.0202C17.0257 19.0907 16.1046 20 15 20H3Z" fill="#0578FF"/>
                             </svg>
-                            <button type="button" id="minus">-</button>
-                            <input type="number" id="passengers" value="1" min="1" max="12">
-                            <button type="button" id="plus">+</button>
+                            <button class="passenger-button" type="button" id="minus">-</button>
+                            <span class="passenger-number">1</span>
+                            <button class="passenger-button" type="button" id="plus">+</button>
                         </div>
                     </div>
-                    <div class="">
+                   <div class="departure-arrival">
+                       <div class="departure">
+                           <label for="departure"><b>Departure</b></label><br>
+                           <input class="departure-input" type="text" id="departure" name="departure" placeholder="Your City/Station">
+                       </div>
+                       <div class="arrival">
+                           <label for="arrival"><b>Arrival</b></label><br>
+                           <input class="arrival-input" type="text" id="arrival" name="arrival" placeholder="Where to?">
+                       </div>
+                       <div class="depart">
+                           <label for="depart"><b>Pick you lucky day</b></label><br>
+                           <input class="depart-input" type="date" id="depart" name="depart" placeholder="Depart">
+                       </div>
+                       <div class="return">
+                           <br>
+                           <input class="return-input" type="date" id="return" name="return" placeholder="Return">
+                       </div>
+                   </div>
 
-                    </div>
 
 
                     <button class="hero-button" id="Find My Alpine Ride">Find My Alpine Ride</button>
@@ -56,6 +72,6 @@
         </section>
     </main>
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
