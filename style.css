@@ -155,7 +155,6 @@ p {
     grid-template-rows: 89px 89px;
     margin-bottom: 24px;
     gap: 32px;
-    justify-content: space-between;
 }
 
 
