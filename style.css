@@ -154,7 +154,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 89px 89px;
     margin-bottom: 24px;
-    gap: 20px;
+    gap: 32px;
     justify-content: space-between;
 }
 
