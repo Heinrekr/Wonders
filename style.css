@@ -45,7 +45,18 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 50px;
+}
 
+h3 {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+label {
+    font-weight: 600;
 }
 
 p {
@@ -230,6 +241,7 @@ p {
     color: var(--white);
     font-family: 'poppins', sans-serif;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .facts-container {
@@ -331,27 +343,121 @@ p {
 .faq-container {
     max-width: 1440px;
     margin: auto;
-    padding: 128px 177px;
+    padding: 128px 177px 248px 177px;
 }
 
 details {
-    border: 1px solid #aaaaaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
+    /*border: 1px solid #aaaaaa;*/
+    /*border-radius: 4px;*/
+    /*padding: 0.5em 0.5em 0;*/
 }
 
 summary {
     font-weight: 500;
     font-size: 18px;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
+    /*margin: -0.5em -0.5em 0;*/
+    /*padding: 0.5em;*/
 }
 
 details[open] {
-    padding: 0.5em;
+    /*padding: 0.5em;*/
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaaaaa;
-    margin-bottom: 0.5em;
+    /*border-bottom: 1px solid #aaaaaa;*/
+    /*margin-bottom: 0.5em;*/
+}
+
+/*FOOTER-CONTACT*/
+.contact-container {
+    background-color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 640px;
+    text-align: center;
+    padding: 60px 0px;
+    position: relative;
+    bottom: 120px;
+}
+.contact-h {
+    margin-bottom: 20px;
+}
+.contact-number {
+    font-size: 28px;
+}
+
+.contact-mail {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-adress {
+    font-size: 18px;
+}
+
+/*FOOTER-LOGO-NAV*/
+.footer {
+    background-color: var(--primary-blue);
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 64px 64px 40px 64px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 51px;
+}
+
+.footer-logo-name {
+    color: var(--white);
+    font-size: 34px;
+}
+
+.footer-nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+}
+
+.footer-nav-container nav {
+    width: 192px;
+}
+
+nav h3 {
+    margin-bottom: 24px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 3;
+}
+
+.footer-copyright {
+    padding: 0px 978px 76px 64px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.footer-copyright p {
+    color: var(--white);
+    font-weight: 500;
+    text-wrap: nowrap;
 }
