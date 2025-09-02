@@ -352,11 +352,15 @@ summary::marker {
 
 summary::after {
     content: "\2715";
-
+    color: var(--primary-black);
+    font-size: 16px;
+    font-weight: 700;
+    transform: rotate(45deg);
 }
 
 details[open] summary::after {
     content: "\2715";
+    transform: rotate(0deg);
 }
 
 summary {
