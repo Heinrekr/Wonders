@@ -216,6 +216,7 @@ p {
 }
 
 .passenger-button {
+    cursor: pointer;
     font-size: 20px;
     background-color: var(--white);
     border: none;
@@ -224,6 +225,10 @@ p {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.passenger-button:hover {
+    color: var(--primary-blue-train);
 }
 
 .departure-arrival {
@@ -270,7 +275,6 @@ p {
     width: 100%;
     margin-top: 16px;
 }
-
 
 .hero-button {
     background-color: var(--primary-blue-train);
