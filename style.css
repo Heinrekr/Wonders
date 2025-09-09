@@ -562,6 +562,12 @@ details p{
     padding: 16px 0;
 }
 
+@media (max-width: 360px) {
+    .faq-container {
+        padding: 64px 0 184px 0;
+    }
+}
+
 /*FOOTER-CONTACT*/
 .contact {
     background-color: var(--primary-blue);
@@ -571,7 +577,8 @@ details p{
     background-color: var(--white);
     border-radius: 10px;
     border: 1px solid black;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     text-align: center;
     padding: 60px 0;
     position: relative;
@@ -595,11 +602,16 @@ details p{
 }
 
 @media (max-width: 768px) {
-
+    .contact-container {
+        max-width: 464px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 360px) {
-
+    .contact-number, .contact-mail {
+        font-size: 20px;
+    }
 }
 
 /*FOOTER-LOGO-NAV*/
@@ -611,6 +623,7 @@ details p{
     display: flex;
     justify-content: space-between;
     padding: 64px 0 40px 0;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -618,6 +631,7 @@ details p{
     align-items: center;
     gap: 15px;
     height: 51px;
+    margin-bottom: 40px;
 }
 
 .footer-logo-name {
@@ -630,10 +644,12 @@ details p{
     justify-content: space-between;
     max-width: 640px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .footer-nav-container nav {
-    width: 192px;
+    max-width: 192px;
+    width: 100%;
 }
 
 nav h3 {
@@ -642,12 +658,17 @@ nav h3 {
 
 ul {
     list-style-type: none;
+    /*height: 188px;*/
+}
+
+ul li {
+    margin-bottom: 31px;
 }
 
 ul a {
     color: var(--white);
     text-decoration: none;
-    line-height: 3;
+    /*line-height: 3;*/
 }
 
 .footer-copyright {
@@ -657,5 +678,19 @@ ul a {
 .footer-copyright p {
     color: var(--white);
     font-weight: 500;
-    text-wrap: nowrap;
+    text-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 360px) {
+    .footer-nav-container nav {
+        max-width: 140px;
+        width: 100%;
+    }
+    .footer-copyright {
+        padding: 0 0 64px 0;
+    }
 }
