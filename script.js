@@ -14,7 +14,7 @@ counterButton.forEach( (el,index) => {
     });
 });
 
-// // БУРГЕР МЕНЮ
-// document.getElementById('burger').addEventListener('click', (e) => {
-//     document.querySelector('.burger').classList.toggle('open')
-// });
+// БУРГЕР МЕНЮ
+document.getElementById('burger').addEventListener('click', (e) => {
+    document.querySelector('.burger').classList.toggle('open')
+});
