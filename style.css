@@ -498,7 +498,7 @@ p {
     .images1 {
         grid-template-columns: 704px;
     }
-    .galerie-images {
+    .gallery-images {
         flex-wrap: wrap;
         gap: 24px;
     }
@@ -524,7 +524,7 @@ p {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    .galerie-container {
+    .gallery-container {
         padding: 64px 0;
     }
 }
