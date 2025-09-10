@@ -13,3 +13,8 @@ counterButton.forEach( (el,index) => {
         counterText.textContent = counter;
     });
 });
+
+// // БУРГЕР МЕНЮ
+// document.getElementById('burger').addEventListener('click', (e) => {
+//     document.querySelector('.burger').classList.toggle('open')
+// });
