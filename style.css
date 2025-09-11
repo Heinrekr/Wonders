@@ -80,7 +80,7 @@ p {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .container {
         max-width: 360px;
         width: 100%;
@@ -218,7 +218,7 @@ p {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .header-logo-name{
         display: none;
     }
@@ -383,7 +383,7 @@ p {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .hero-frame-p {
         font-size: 11px;
     }
@@ -401,6 +401,19 @@ p {
     }
     .hero-container {
         padding-top: 24px;
+    }
+
+    .departure-input {
+        max-width: 328px;
+    }
+    .arrival-input {
+        max-width: 328px;
+    }
+    .depart-input {
+        max-width: 328px;
+    }
+    .return-input {
+        max-width: 328px;
     }
 }
 
@@ -439,7 +452,7 @@ p {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .facts-container p {
         font-size: 16px;
         text-wrap: nowrap;
@@ -523,7 +536,7 @@ p {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .images1 {
         /*grid-template-columns: 320px;*/
         /*grid-template-rows: 220px 220px;*/
@@ -586,7 +599,7 @@ p {
     .apps-images img:nth-child(3) { grid-area: right; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .apps-images {
         display: flex;
         flex-direction: column;
@@ -645,7 +658,7 @@ details p{
     padding: 16px 0;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .faq-container {
         padding: 64px 0 184px 0;
     }
@@ -691,7 +704,7 @@ details p{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .contact-number, .contact-mail {
         font-size: 20px;
     }
@@ -762,7 +775,7 @@ ul a {
     text-wrap: wrap;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .footer-nav-container nav {
         max-width: 140px;
         width: 100%;
