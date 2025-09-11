@@ -18,3 +18,7 @@ counterButton.forEach( (el,index) => {
 document.getElementById('burger').addEventListener('click', (e) => {
     document.querySelector('.burger').classList.toggle('open')
 });
+
+document.getElementById('burger').addEventListener('click', (e) => {
+    document.querySelector('.menu').classList.toggle('open')
+});

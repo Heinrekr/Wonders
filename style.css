@@ -181,6 +181,10 @@ p {
     transform: translateY(10px) rotate(-45deg);
 }
 
+.menu.open {
+    overflow: hidden;
+}
+
 @media (max-width: 768px) {
     .header-nav {
         display: none;
@@ -457,14 +461,19 @@ p {
 }
 
 .gallery-images {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
 .images1 {
     display: grid;
-    grid-template-columns: 528px;
-    grid-template-rows: 376px 376px;
+    /*grid-template-columns: 528px;*/
+    /*grid-template-rows: 376px 376px;*/
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr;
     gap: 24px;
 }
 
@@ -477,8 +486,10 @@ p {
 
 .images2 {
     display: grid;
-    grid-template-columns: 305px 416px;
-    grid-template-rows: 489px 264px;
+    /*grid-template-columns: 305px 416px;*/
+    /*grid-template-rows: 489px 264px;*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 24px 32px;
 }
 
@@ -496,28 +507,30 @@ p {
 
 @media (max-width: 768px) {
     .images1 {
-        grid-template-columns: 704px;
+        /*grid-template-columns: 704px;*/
     }
     .gallery-images {
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
         gap: 24px;
+        grid-template-columns: 1fr;
     }
     .images2 {
-        grid-template-columns: 340px 340px;
-        grid-template-rows: 425px 225px;
+        /*grid-template-columns: 340px 340px;*/
+        /*grid-template-rows: 425px 225px;*/
         gap: 24px 24px;
     }
 }
 
 @media (max-width: 360px) {
     .images1 {
-        grid-template-columns: 320px;
-        grid-template-rows: 220px 220px;
+        /*grid-template-columns: 320px;*/
+        /*grid-template-rows: 220px 220px;*/
         gap: 12px;
     }
     .images2 {
-        grid-template-columns: 320px;
-        grid-template-rows: 472px 637px;
+        /*grid-template-columns: 320px;*/
+        grid-template-columns: 1fr;
+        /*grid-template-rows: 472px 637px;*/
         gap: 12px;
     }
     .image5 {
