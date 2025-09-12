@@ -171,8 +171,8 @@ function setupAutocomplete(inputId, listId) {
             const li = document.createElement('li');
             li.textContent = station;
             li.addEventListener('click', function () {
-                input.value = station; // подставляем выбранную станцию
-                list.style.display = 'none'; // скрываем список
+                input.value = station;
+                list.style.display = 'none';
             });
             list.appendChild(li);
         });
