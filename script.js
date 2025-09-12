@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const today = new Date().toISOString().split('T')[0];
 
+        if (!roundTrip.checked && !oneWay.checked) {
+            alert('Please select a trip type: Round Trip or One Way!');
+            return;
+        }
         if (!departureValue || !arrivalValue || !departDateValue) {
             alert('Please fill in all required fields: Departure, Arrival, and Depart Date!');
             return;
