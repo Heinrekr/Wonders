@@ -364,6 +364,7 @@ p {
     width: 100%;
     margin-top: 16px;
     padding: 0 24px;
+    cursor: pointer;
 }
 
 .return-input {
@@ -374,6 +375,12 @@ p {
     width: 100%;
     margin-top: 16px;
     padding: 0 24px;
+    cursor: pointer;
+}
+
+.depart-input::-webkit-calendar-picker-indicator,
+.return-input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
 }
 
 .suggestions-list {
