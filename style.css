@@ -377,6 +377,10 @@ p {
     text-wrap: nowrap;
 }
 
+.hero-button:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .hero-image {
         display: none;
