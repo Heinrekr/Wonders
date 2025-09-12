@@ -201,6 +201,7 @@ p {
         flex-direction: column;
         background-color: var(--primary-blue-train);
         position: absolute;
+        z-index: 1001;
         top: 116px;
         left: -100%;
         width: 100%;
@@ -278,6 +279,19 @@ p {
     font-size: 14px;
     height: 34px;
     margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.trip-options label, .trip-options input {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.trip-options label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .passenger-counter {
@@ -332,6 +346,7 @@ p {
     max-width: 304px;
     width: 100%;
     margin-top: 16px;
+    padding: 0px 24px;
 }
 
 .arrival-input {
@@ -341,6 +356,7 @@ p {
     max-width: 304px;
     width: 100%;
     margin-top: 16px;
+    padding: 0px 24px;
 }
 
 .depart-input {
@@ -350,6 +366,7 @@ p {
     max-width: 304px;
     width: 100%;
     margin-top: 16px;
+    padding: 0px 24px;
 }
 
 .return-input {
@@ -359,6 +376,40 @@ p {
     max-width: 304px;
     width: 100%;
     margin-top: 16px;
+    padding: 0px 24px;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 5px 0;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    list-style: none;
+}
+
+.suggestions-list li {
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.departure, .arrival {
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.suggestions-list::-webkit-scrollbar {
+    width: 6px;
 }
 
 .hero-button {
