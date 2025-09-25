@@ -72,6 +72,8 @@ p {
     padding: 0 64px;
 }
 
+
+
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
@@ -106,7 +108,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
-    gap: 16px;
+    gap: 50px;
 }
 
 .header-logo {
@@ -120,12 +122,18 @@ p {
     font-size: 34px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header-nav {
     display: flex;
     max-width: 610px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .header-nav a {
@@ -136,6 +144,10 @@ p {
 
 .header-nav a:nth-child(4) {
     font-weight:600;
+}
+
+.header-nav a:hover {
+    color: var(--primary-blue-train);
 }
 
 /*БУРГЕР МЕНЮ*/
@@ -391,7 +403,7 @@ p {
     background: #fff;
     border-radius: 10px;
     margin-top: 12px;
-    padding: 5px 0;
+    padding: 5px 5px;
     max-height: 200px;
     overflow-y: auto;
     z-index: 1000;
@@ -406,6 +418,10 @@ p {
     font-size: 14px;
 }
 
+.suggestions-list li:hover {
+    background-color: var(--primary-blue-train-10);
+}
+
 .departure, .arrival {
     position: relative;
     width: 100%;
@@ -413,7 +429,7 @@ p {
 }
 
 .suggestions-list::-webkit-scrollbar {
-    width: 6px;
+    width: 0;
 }
 
 .hero-button {
@@ -434,6 +450,7 @@ p {
 
 .hero-button:hover {
     cursor: pointer;
+    background-color: dodgerblue;
 }
 
 @media (max-width: 768px) {
@@ -637,9 +654,9 @@ p {
         align-items: center;
         gap:32px;
     }
-    .apps-images img:nth-child(1) { grid-area: top; }
-    .apps-images img:nth-child(2) { grid-area: left; }
-    .apps-images img:nth-child(3) { grid-area: right; }
+    .apps-images a:nth-child(1) { grid-area: top; }
+    .apps-images a:nth-child(2) { grid-area: left; }
+    .apps-images a:nth-child(3) { grid-area: right; }
 }
 
 @media (max-width: 450px) {
@@ -683,6 +700,11 @@ summary::after {
     font-weight: 700;
     transform: rotate(45deg);
 }
+
+summary:hover {
+    cursor: pointer;
+}
+
 
 details[open] summary::after {
     content: "\2715";

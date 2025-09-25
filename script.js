@@ -23,6 +23,30 @@ document.getElementById('burger').addEventListener('click', (e) => {
     document.querySelector('.menu').classList.toggle('open')
 });
 
+document.getElementById('burgerApp').addEventListener('click', (e) => {
+    document.querySelector('.burger').classList.toggle('open')
+});
+
+document.getElementById('burgerApp').addEventListener('click', (e) => {
+    document.querySelector('.menu').classList.toggle('open')
+});
+
+document.getElementById('burgerFaq').addEventListener('click', (e) => {
+    document.querySelector('.burger').classList.toggle('open')
+});
+
+document.getElementById('burgerFaq').addEventListener('click', (e) => {
+    document.querySelector('.menu').classList.toggle('open')
+});
+
+document.getElementById('burgerContact').addEventListener('click', (e) => {
+    document.querySelector('.burger').classList.toggle('open')
+});
+
+document.getElementById('burgerContact').addEventListener('click', (e) => {
+    document.querySelector('.menu').classList.toggle('open')
+});
+
 // ХЕРО КНОПКА
 document.addEventListener('DOMContentLoaded', function () {
     const findRideBtn = document.getElementById('findRideBtn');
