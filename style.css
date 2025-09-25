@@ -198,6 +198,10 @@ a {
     overflow: hidden;
 }
 
+.burger-menu:hover  {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .header-nav {
         display: none;
@@ -227,6 +231,9 @@ a {
     }
     .burger.open .burger-nav {
         left: 0;
+    }
+    .burger-nav a:hover {
+        color: var(--primary-black-train);
     }
 }
 
