@@ -133,7 +133,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    /*gap: 5px;*/
 }
 
 .header-nav a {
@@ -202,7 +202,7 @@ a {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .header-nav {
         display: none;
     }
@@ -460,7 +460,7 @@ a {
     background-color: dodgerblue;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .hero-image {
         display: none;
     }
@@ -524,7 +524,7 @@ a {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .facts-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
