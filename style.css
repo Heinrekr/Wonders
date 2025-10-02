@@ -222,12 +222,13 @@ a {
         width: 100%;
         height: calc(100% - 116px);
         overflow-y: auto;
+        gap: 96px;
+        padding: 96px 32px 0 32px;
     }
     .burger-nav a {
         font-size: 48px;
         text-decoration: none;
         color: var(--white);
-        padding: 96px 32px 0 32px;
     }
     .burger.open .burger-nav {
         left: 0;
@@ -241,9 +242,12 @@ a {
     .header-logo-name{
         display: none;
     }
+    .burger-nav {
+        gap: 64px;
+        padding: 64px 16px 0 16px;
+    }
     .burger-nav a {
         font-size: 32px;
-        padding: 64px 16px 0 16px;
     }
 }
 
